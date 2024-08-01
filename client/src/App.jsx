@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-// import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import { MdDeleteForever, MdEdit } from "react-icons/md";
 import axios from "axios";
-// import { deleteOne, deleteUsers } from "./Reducer";
 
 const App = () => {
   const [users, SetUsers] = useState([]);
