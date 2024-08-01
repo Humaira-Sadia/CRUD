@@ -12,7 +12,7 @@ const Create = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3001/createUser", { name, email, serial })
+      .post("https://crud-emeg.onrender.com/", { name, email, serial })
       .then((res) => {
         console.log(res);
         // Increment serial for the next user

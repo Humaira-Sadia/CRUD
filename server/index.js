@@ -41,6 +41,6 @@ app.post('/createUser', (req, res) => {
         .catch(err => res.status(400).json({ error: err.message }));
 });
 
-app.listen(3001, () => {
+app.listen(() => {
     console.log('Server is running on port 3001');
 });

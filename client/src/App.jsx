@@ -10,13 +10,13 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/")
+      .get("https://crud-emeg.onrender.com/")
       .then((res) => SetUsers(res.data))
       .catch((err) => console.log(err));
   });
 
   const handleDelete = (id) => {
-    axios.delete("http://localhost:3001/deleteUser/"+id)
+    axios.delete("https://crud-emeg.onrender.com/"+id)
     .then(res => {
       console.log(res)
       window.location.reload()
